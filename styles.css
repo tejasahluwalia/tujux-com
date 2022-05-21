@@ -1,12 +1,130 @@
+/*
+  CSS RESET
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/*
+	VARIABLES
+*/
+html {
+	--slate1: hsl(200, 7%, 8.8%);
+	--slate2: hsl(195, 7.1%, 11%);
+	--slate3: hsl(197, 6.8%, 13.6%);
+	--slate4: hsl(198, 6.6%, 15.8%);
+	--slate5: hsl(199, 6.4%, 17.9%);
+	--slate6: hsl(201, 6.2%, 20.5%);
+	--slate7: hsl(203, 6%, 24.3%);
+	--slate8: hsl(207, 5.6%, 31.6%);
+	--slate9: hsl(206, 6%, 43.9%);
+	--slate10: hsl(206, 5.2%, 49.5%);
+	--slate11: hsl(206, 6%, 63%);
+	--slate12: hsl(210, 6%, 93%);
+	--teal1: hsl(168, 48%, 6.5%);
+	--teal2: hsl(169, 77.8%, 7.1%);
+	--teal3: hsl(170, 76.1%, 9.2%);
+	--teal4: hsl(171, 75.8%, 11%);
+	--teal5: hsl(171, 75.7%, 12.8%);
+	--teal6: hsl(172, 75.8%, 15.1%);
+	--teal7: hsl(172, 76.7%, 18.6%);
+	--teal8: hsl(173, 80.2%, 23.7%);
+	--teal9: hsl(173, 80%, 36%);
+	--teal10: hsl(174, 83.9%, 38.2%);
+	--teal11: hsl(174, 90%, 40.7%);
+	--teal12: hsl(166, 73%, 93.1%);
+	--green1: hsl(146, 30%, 7.4%);
+	--green2: hsl(155, 44.2%, 8.4%);
+	--green3: hsl(155, 46.7%, 10.9%);
+	--green4: hsl(154, 48.4%, 12.9%);
+	--green5: hsl(154, 49.7%, 14.9%);
+	--green6: hsl(154, 50.9%, 17.6%);
+	--green7: hsl(153, 51.8%, 21.8%);
+	--green8: hsl(151, 51.7%, 28.4%);
+	--green9: hsl(151, 55%, 41.5%);
+	--green10: hsl(151, 49.3%, 46.5%);
+	--green11: hsl(151, 50%, 53.2%);
+	--green12: hsl(137, 72%, 94%);
+	--cyan1: hsl(192, 60.0%, 7.2%);
+	--cyan2: hsl(192, 71.4%, 8.2%);
+	--cyan3: hsl(192, 75.9%, 10.8%);
+	--cyan4: hsl(192, 79.3%, 12.8%);
+	--cyan5: hsl(192, 82.5%, 14.6%);
+	--cyan6: hsl(192, 86.6%, 16.9%);
+	--cyan7: hsl(192, 92.6%, 20.1%);
+	--cyan8: hsl(192, 100%, 24.5%);
+	--cyan9: hsl(190, 95.0%, 39.0%);
+	--cyan10: hsl(188, 100%, 40.0%);
+	--cyan11: hsl(186, 100%, 42.2%);
+	--cyan12: hsl(185, 73.0%, 93.2%);
+	--mint1: hsl(173, 50.0%, 6.6%);
+	--mint2: hsl(176, 73.0%, 7.3%);
+	--mint3: hsl(175, 79.3%, 8.9%);
+	--mint4: hsl(174, 84.8%, 10.3%);
+	--mint5: hsl(174, 90.2%, 11.9%);
+	--mint6: hsl(173, 96.0%, 13.8%);
+	--mint7: hsl(172, 100%, 16.8%);
+	--mint8: hsl(170, 100%, 21.4%);
+	--mint9: hsl(167, 65.0%, 66.0%);
+	--mint10: hsl(163, 80.0%, 77.0%);
+	--mint11: hsl(167, 70.0%, 48.0%);
+	--mint12: hsl(165, 80.0%, 94.8%);
+}
+
+/*
+	CSS
+*/
 body {
 	margin: 40px auto;
 	max-width: 650px;
 	line-height: 1.6;
 	font-size: 18px;
-	background-color: #eee;
-	color: #444;
+	background-color: var(--mint2);
+	color: var(--mint12);
 	padding: 0 10px;
 }
+
 h1,
 h2,
 h3 {

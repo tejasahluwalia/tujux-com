@@ -20,6 +20,12 @@ svg {
 	max-width: 100%;
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 input,
 button,
 textarea,
@@ -112,23 +118,63 @@ html {
 	CSS
 */
 body {
-	margin: 40px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 4rem auto;
 	max-width: 650px;
 	line-height: 1.6;
 	font-size: 18px;
-	background-color: var(--mint2);
+	background-color: var(--mint1);
 	color: var(--mint12);
-	padding: 0 10px;
+	padding: 0 1rem;
 }
 
 h1,
 h2,
 h3 {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	line-height: 1.4;
+	margin: 1rem 0;
 }
 
 p {
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+
+.divider {
+	margin: 2rem 0;
+	border-color: var(--mint6);
+}
+
+.card {
+	padding: 1rem;
+	margin: 1rem 0;
+	border-radius: 1rem;
+	border: solid 2px var(--mint7);
+	background-color: var(--mint2);
+	transition: border 250ms, background-color 250ms;
+}
+
+/* .card:hover {
+	border-color: var(--mint8);
+	background-color: var(--mint2);
+} */
+
+.study-link {
+	color: var(--mint11);
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	transition: gap 250ms;
+	word-spacing: -2px;
+	margin-top: 1rem;
+}
+
+.study-link:hover {
+	text-decoration: underline;
+	gap: 1rem;
 }

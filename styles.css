@@ -52,6 +52,18 @@ h6 {
 	VARIABLES
 */
 html {
+	--gray1: hsl(0, 0%, 8.5%);
+	--gray2: hsl(0, 0%, 11.0%);
+	--gray3: hsl(0, 0%, 13.6%);
+	--gray4: hsl(0, 0%, 15.8%);
+	--gray5: hsl(0, 0%, 17.9%);
+	--gray6: hsl(0, 0%, 20.5%);
+	--gray7: hsl(0, 0%, 24.3%);
+	--gray8: hsl(0, 0%, 31.2%);
+	--gray9: hsl(0, 0%, 43.9%);
+	--gray10: hsl(0, 0%, 49.4%);
+	--gray11: hsl(0, 0%, 62.8%);
+	--gray12: hsl(0, 0%, 93.0%);
 	--slate1: hsl(200, 7%, 8.8%);
 	--slate2: hsl(195, 7.1%, 11%);
 	--slate3: hsl(197, 6.8%, 13.6%);
@@ -64,6 +76,18 @@ html {
 	--slate10: hsl(206, 5.2%, 49.5%);
 	--slate11: hsl(206, 6%, 63%);
 	--slate12: hsl(210, 6%, 93%);
+	--sage1: hsl(155, 7.0%, 8.4%);
+	--sage2: hsl(150, 7.4%, 10.6%);
+	--sage3: hsl(150, 6.7%, 13.1%);
+	--sage4: hsl(150, 6.4%, 15.3%);
+	--sage5: hsl(150, 6.1%, 17.4%);
+	--sage6: hsl(150, 5.8%, 19.9%);
+	--sage7: hsl(150, 5.5%, 23.6%);
+	--sage8: hsl(150, 5.1%, 30.6%);
+	--sage9: hsl(155, 6.0%, 42.5%);
+	--sage10: hsl(153, 4.8%, 48.2%);
+	--sage11: hsl(155, 5.0%, 61.8%);
+	--sage12: hsl(155, 6.0%, 93.0%);
 	--teal1: hsl(168, 48%, 6.5%);
 	--teal2: hsl(169, 77.8%, 7.1%);
 	--teal3: hsl(170, 76.1%, 9.2%);
@@ -123,8 +147,12 @@ body {
 	max-width: 650px;
 	line-height: 1.6;
 	font-size: 18px;
-	background-color: var(--mint1);
-	color: var(--mint12);
+	/* background-color: var(--sage1);
+	color: var(--sage12); */
+	/* background-color: var(--slate1);
+	color: var(--slate12); */
+	background-color: var(--gray1);
+	color: var(--gray12);
 	padding: 0 1rem;
 }
 
@@ -142,27 +170,51 @@ p {
 	line-height: 1.6;
 }
 
-.divider {
-	margin: 2rem 0;
-	border-color: var(--mint6);
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 2rem;
+	padding: 2rem;
+	color: var(--gray11);
+	text-align: center;
+	border: solid 1px var(--gray7)
 }
 
-.card {
+header img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 48px;
+	margin-right: 1rem;
+}
+
+.divider {
+	margin: 2rem 0;
+	border-color: var(--gray6);
+}
+
+.study_card {
 	padding: 1rem;
 	margin: 1rem 0;
-	border-radius: 1rem;
-	border: solid 2px var(--mint7);
-	background-color: var(--mint2);
+	/* border-radius: 1rem; */
 	transition: border 250ms, background-color 250ms;
 }
 
-/* .card:hover {
-	border-color: var(--mint8);
-	background-color: var(--mint2);
-} */
+.study_card_mint {
+	color: var(--mint12);
+	border: solid 2px var(--mint7);
+	background-color: var(--mint3);
+}
 
-.study-link {
-	color: var(--mint11);
+.study_card_cyan {
+	color: var(--cyan12);
+	border: solid 2px var(--cyan7);
+	background-color: var(--cyan3);
+}
+
+.study_link {
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
 	text-decoration: none;
@@ -174,7 +226,28 @@ p {
 	margin-top: 1rem;
 }
 
-.study-link:hover {
+.study_link_mint {
+	color: var(--mint11);
+}
+
+.study_link_cyan {
+	color: var(--cyan11);
+}
+
+.study_link:hover {
 	text-decoration: underline;
 	gap: 1rem;
+}
+
+.study_link svg {
+	height: 20px;
+	width: 20px;
+}
+
+footer {
+	margin-top: 2rem;
+	padding: 2rem;
+	color: var(--gray11);
+	text-align: center;
+	border: solid 1px var(--gray7);
 }

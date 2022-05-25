@@ -149,10 +149,10 @@ body {
 	font-size: 18px;
 	/* background-color: var(--sage1);
 	color: var(--sage12); */
-	/* background-color: var(--slate1);
-	color: var(--slate12); */
-	background-color: var(--gray1);
-	color: var(--gray12);
+	background-color: var(--slate1);
+	color: var(--slate12);
+	/* background-color: var(--gray1);
+	color: var(--gray12); */
 	padding: 0 1rem;
 }
 
@@ -198,7 +198,6 @@ header img {
 .study_card {
 	padding: 1rem;
 	margin: 1rem 0;
-	/* border-radius: 1rem; */
 	transition: border 250ms, background-color 250ms;
 }
 
@@ -222,7 +221,7 @@ header img {
 	align-items: center;
 	gap: 0.5rem;
 	transition: gap 250ms;
-	word-spacing: -2px;
+	word-spacing: -4px;
 	margin-top: 1rem;
 }
 

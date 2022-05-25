@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="/styles.css" />
 		<link rel="icon" type="image/svg" href="logo.svg" />
 		<title>
-			{{ block "title" . }} {{ .Page.Title }} {{ with .Page}}| {{ .Site.Title }}
-			{{ end }}
+			{{ block "title" . }} {{ .Page.Title }} {{ if not .IsHome }}| {{
+			.Site.Title }} {{ end }} {{ end }}
 		</title>
 	</head>
 	<body>

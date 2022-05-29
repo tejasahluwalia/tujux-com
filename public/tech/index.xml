@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tejas Ahluwalia</title>
-    <link>https://tej.ai/</link>
-    <description>Recent content on Tejas Ahluwalia</description>
+    <title>Teches on Tejas Ahluwalia</title>
+    <link>https://tej.ai/tech/</link>
+    <description>Recent content in Teches on Tejas Ahluwalia</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 23 May 2022 21:16:17 +0530</lastBuildDate><atom:link href="https://tej.ai/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chatbot</title>
-      <link>https://tej.ai/work/chatbot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tej.ai/work/chatbot/</guid>
-      <description>An ed-tech chatbot that connects students with tutors on WhatsApp instantly.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://tej.ai/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD</title>
       <link>https://tej.ai/tech/cicd/</link>
@@ -32,15 +22,6 @@
       
       <guid>https://tej.ai/tech/cloud/</guid>
       <description>Comfortable with AWS &amp;amp; GCP</description>
-    </item>
-    
-    <item>
-      <title>Custom Website Builder</title>
-      <link>https://tej.ai/work/custom-website-builder/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tej.ai/work/custom-website-builder/</guid>
-      <description>A fully-featured website builder using with 20+ blocks and 3 themes.</description>
     </item>
     
     <item>

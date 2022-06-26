@@ -2,7 +2,10 @@
 <main>
 	<h1>{{ .Title }}</h1>
 	{{ if .Draft }}
-	<p>I haven't finished this page yet!</p>
-	{{ else }} {{ .Content }} {{ end }}
+	<div class="callout">
+		<h2>W.I.P.</h2>
+		<p>I haven't finished this page yet!</p>
+	</div>
+	{{ else }} {{ end }} {{ .Content }}
 </main>
 {{ end }}

@@ -291,6 +291,13 @@ footer {
 	font-size: small;
 }
 
+.callout {
+	padding: 1rem;
+	background-color: var(--slate3);
+	border: solid 2px var(--slate7);
+}
+
+
 @media screen and (min-width: 600px) {
 	.tech-list {
 		grid-template-columns: 1fr 1fr;

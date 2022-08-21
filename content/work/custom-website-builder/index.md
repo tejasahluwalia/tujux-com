@@ -1,7 +1,7 @@
 ---
 title: "Custom Website Builder"
-draft: true
-summary: "A fully-featured website builder using with 20+ blocks and 3 themes."
+draft: false
+summary: "A fully-featured website builder with 20+ blocks and 3 themes."
 ---
 
 The CPB Foundation website had some ambitious requirements. It needed to be easy to customize and build by the content writers while having different themes for the different branches of the organisation.

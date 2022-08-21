@@ -1,25 +1,39 @@
-<h2>Case Studies</h2>
-<ul class="card-list">
+<h2 class="text-4xl uppercase font-bold mb-4">Case Studies</h2>
+<ul class="w-full gap-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
 	{{ range where .Site.RegularPages "Section" "work" }}
-	<li class="study_card study_card_cyan">
-		<h3>{{ .Title }}</h3>
-		<p>{{ .Summary }}</p>
-		<a class="study_link study_link_cyan" href="{{ .RelPermalink }}">
-			<span>Read the full case study</span>
-			<svg
-				width="15"
-				height="15"
-				viewBox="0 0 15 15"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
-					fill="currentColor"
-					fill-rule="evenodd"
-					clip-rule="evenodd"
-				></path>
-			</svg>
+	<li class="group">
+		<a
+			class="block p-2 sm:p-4 border-cyan-700/60 border-2 bg-cyan-900/60 group-hover:bg-cyan-900/80 transition rounded-lg"
+			href="{{ .RelPermalink }}"
+		>
+			{{ with $thumbnail := .Resources.GetMatch "thumbnail.png" }}
+			<img
+				src="{{ $thumbnail.Permalink }}"
+				alt=""
+				width="{{ $thumbnail.Width }}"
+				height="{{ $thumbnail.Height }}"
+				class="w-full mb-4 object-cover rounded-md"
+			/>{{ end }}
+
+			<h3 class="text-2xl mb-2 font-bold">{{ .Title }}</h3>
+			<p class="mb-4 text-lg">{{ .Summary }}</p>
+			<div class="flex gap-2 text-cyan-200 group-hover:gap-4 transition-[gap]">
+				<span class="font-mono">Read the full case study</span>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-6 w-6"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					stroke-width="2"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M17 8l4 4m0 0l-4 4m4-4H3"
+					/>
+				</svg>
+			</div>
 		</a>
 	</li>
 	{{ end }}

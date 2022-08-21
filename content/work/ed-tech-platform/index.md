@@ -1,7 +1,7 @@
 ---
-title: "Chatbot"
-draft: true
-summary: "An ed-tech chatbot that connects students with tutors on WhatsApp instantly."
+title: "Ed-Tech Platform"
+draft: false
+summary: "A 1-on-1 ed-tech platform that connects students with tutors over WhatsApp instantly."
 ---
 
 We wanted to create a platform where students could instantly connect with a tutor over a 1-on-1 live video call to help them with a particular topic. To make this as accessible as possible, we decided to build it on WhatsApp.

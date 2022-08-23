@@ -2,32 +2,42 @@
 <html lang="en">
 	<head>
 		<!-- <script src="htmx.min.js" defer></script> -->
+		<!-- <script src="//unpkg.com/alpinejs" defer></script> -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		{{ $style := resources.Get "style.css" }}
 		<link rel="stylesheet" href="{{ $style.Permalink }}" />
+
 		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 		<link rel="icon" type="image/svg" href="logo.svg" />
-		<!-- Google Fonts -->
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap"
-			rel="stylesheet"
-		/> -->
 
 		<title>
 			{{ block "title" . }} {{ .Page.Title }} {{ if not .IsHome }}| {{
 			.Site.Title }} {{ end }} {{ end }}
 		</title>
 	</head>
-	<body class="bg-gray-900 text-gray-50">
+	<body class="text-gray-100 bg-transparent h-full min-h-screen flex flex-col">
 		<!-- Code that all your templates share, like a header -->
+
+		<canvas id="hyperdrive" class="fixed h-screen w-full -z-10"></canvas>
 		{{ block "main" . }}
 		<!-- The part of the page that begins to differ between templates -->
 		{{ end }} {{ block "footer" . }}
 		<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+		<footer class="container mx-auto p-4 text-right h-full">
+			<a
+				class="underline text-sm text-gray-50/50 text-right w-full"
+				target="_blank"
+				referrerpolicy="noreferrer noopener"
+				href="https://stackoverflow.com/a/46437821/14390572"
+			>
+				Background animation source
+			</a>
+		</footer>
+		{{ $hyperdrive := resources.Get "scripts/hyperdrive.js" }}
+		<script src="{{ $hyperdrive.Permalink }}"></script>
+
 		{{ end }}
 	</body>
 </html>

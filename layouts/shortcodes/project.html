@@ -2,7 +2,7 @@
 <ul class="grid gap-8">
 	{{ range where .Site.RegularPages "Section" "project" }}
 	<li
-		class="p-4 border-cyan-700/60 border-2 bg-cyan-900/60 rounded-lg grid grid-cols-1 lg:grid-cols-5"
+		class="p-4 border-cyan-700/40 border-2 bg-cyan-900/40 rounded-lg grid grid-cols-1 lg:grid-cols-5"
 	>
 		<div class="col-span-2 pr-4 pb-4 flex flex-col gap-4">
 			<a
@@ -34,7 +34,7 @@
 			></img>
 			{{ end }}
 		</div>
-		<div class="col-span-3 lg:border-l-2 border-cyan-700/60 py-4 lg:pl-4 text-lg prose prose-invert max-w-none">
+		<div class="col-span-3 lg:border-l-2 border-cyan-700/40 py-4 lg:pl-4 text-lg prose prose-invert max-w-none">
 			{{ .Content }}
 		</div>
 	</li>

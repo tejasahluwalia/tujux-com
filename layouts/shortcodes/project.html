@@ -1,10 +1,10 @@
-<h2 class="text-4xl uppercase font-bold mb-4">Projects</h2>
-<ul class="grid gap-4">
+<h2 class="text-4xl uppercase font-bold mb-8">Projects</h2>
+<ul class="grid gap-8">
 	{{ range where .Site.RegularPages "Section" "project" }}
 	<li
-		class="p-4 border-teal-700/60 border-2 bg-teal-900/60 rounded-lg grid grid-cols-1 lg:grid-cols-5"
+		class="p-4 border-cyan-700/60 border-2 bg-cyan-900/60 rounded-lg grid grid-cols-1 lg:grid-cols-5"
 	>
-		<div class="col-span-2">
+		<div class="col-span-2 pr-4 pb-4 flex flex-col gap-4">
 			<a
 				href="{{ .Params.Link }}"
 				referrerpolicy="no-referrer"
@@ -27,17 +27,15 @@
 					/>
 				</svg>
 			</a>
-			{{ with $previewVideo := .Resources.GetMatch "preview.webm" }}
-			<video
-				src="{{ $previewVideo.Permalink }}"
-				muted
-				autoplay
-				class="aspect-video overflow-hidden object-cover mt-4 pr-4"
-			></video>
+			{{ with $previewImage := .Resources.GetMatch "preview.png" }}
+			<img
+				src="{{ $previewImage.Permalink }}"
+				class="aspect-video rounded-lg overflow-hidden object-cover my-auto"
+			></img>
 			{{ end }}
 		</div>
-		<div class="col-span-3 border-l-2 border-teal-700/60 pl-4">
-			<p>{{ .Content }}</p>
+		<div class="col-span-3 lg:border-l-2 border-cyan-700/60 py-4 lg:pl-4 text-lg prose prose-invert max-w-none">
+			{{ .Content }}
 		</div>
 	</li>
 	{{ end }}

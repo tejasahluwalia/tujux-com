@@ -4,6 +4,8 @@ draft: false
 summary: "A fully-featured website builder with 20+ blocks and 3 themes."
 ---
 
+## Intro
+
 The CPB Foundation website had some ambitious requirements. It needed to be easy to customize and build by the content writers while having different themes for the different branches of the organisation.
 
 In order to achieve this. I pushed back on the use of Wordpress and decided to build it in React using Javascript/Typescript and Next.js. Since these allow me to create themable components and reuse them as blocks.

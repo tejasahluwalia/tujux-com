@@ -250,6 +250,8 @@ function loop(time) {
 	} else {
 		if (hyperSpeed > MIN_SPEED) {
 			hyperSpeed -= 0.01;
+		} else {
+			hyperSpeed = MIN_SPEED;
 		}
 	}
 

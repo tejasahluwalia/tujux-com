@@ -4,6 +4,8 @@ draft: false
 summary: "A 1-on-1 ed-tech platform that connects students with tutors over WhatsApp instantly."
 ---
 
+## Intro
+
 We wanted to create a platform where students could instantly connect with a tutor over a 1-on-1 live video call to help them with a particular topic. To make this as accessible as possible, we decided to build it on WhatsApp.
 
 I started by laying out all the user flows and deriving the kind of entities and relationships we need. With this in hand, I conducted some research to figure out the best database for our platform. I decided on PostgreSQL for its flexibility after rejecting no-SQL since we had many strong relationships between entities.

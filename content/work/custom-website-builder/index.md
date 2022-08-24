@@ -14,7 +14,7 @@ That's the name of the game when coming up with a strategy for the evolving need
 
 The CPB Foundation website had some ambitious requirements. It needed to be easy to customise and build by the content writers while having different themes for the different branches of the organisation.
 
-The team was accustomed to Wordpress and its world of themes and page builders. Unfortunately, these tools were often limited as you try to add features - either by the exponentially growing complexity or by rapidly degrading performance.
+The team was accustomed to WordPress and its world of themes and page builders. Unfortunately, these tools were often limited as you try to add features - either by the exponentially growing complexity or by rapidly degrading performance.
 
 I had stumbled upon [PayloadCMS](https://payloadcms.com) at some point during my research and was convinced it was the right tool for the job. It allowed me to easily create these custom blocks like WordPress while leveraging all the other tools of the Javascript ecosystem like [Next.js](https://nextjs.org).
 

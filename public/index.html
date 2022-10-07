@@ -18,15 +18,8 @@
 			 Tejas Ahluwalia  
 		</title>
 	</head>
-	<body
-		class="text-gray-100 bg-transparent h-full min-h-screen flex flex-col motion-reduce:bg-gray-900"
-	>
+	<body class="text-slate-700 bg-slate-100">
 		
-
-		<canvas
-			id="hyperdrive"
-			class="fixed h-screen w-full -z-10 motion-reduce:hidden"
-		></canvas>
 		
 <main class="container mx-auto p-4 flex-1">
 	<hgroup class="mb-8">
@@ -61,23 +54,15 @@
 	</hgroup>
 	<div class="my-16"></div>
 
-<h2 class="text-4xl uppercase font-bold mb-8">Work</h2>
-<ul class="w-full gap-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+<h2 class="text-4xl uppercase font-bold">Work</h2>
+<hr class="my-4 border-slate-300 border-[1px] max-w-sm" />
+<ul class="w-full gap-8 grid">
 	
 	<li class="group">
-		<a class="block transition rounded-lg" href="/work/custom-website-builder/">
-			
-			<img
-				src="https://tej.ai/work/custom-website-builder/thumbnail.png"
-				alt=""
-				width="750"
-				height="500"
-				class="w-full mb-4 object-cover rounded-md"
-			/>
-
+		<a class="block" href="/work/custom-website-builder/">
 			<h3 class="text-2xl mb-2 font-bold">Custom Website Builder</h3>
 			<p class="mb-4 text-lg">A fully-featured website builder with 20+ blocks and 3 themes.</p>
-			<div class="flex gap-2 text-cyan-200 group-hover:gap-4 transition-[gap]">
+			<div class="flex gap-2 text-slate-700 group-hover:gap-4 transition-[gap]">
 				<span class="font-mono font-bold">Read the full case study</span>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -98,19 +83,10 @@
 	</li>
 	
 	<li class="group">
-		<a class="block transition rounded-lg" href="/work/ed-tech-platform/">
-			
-			<img
-				src="https://tej.ai/work/ed-tech-platform/thumbnail.png"
-				alt=""
-				width="750"
-				height="500"
-				class="w-full mb-4 object-cover rounded-md"
-			/>
-
+		<a class="block" href="/work/ed-tech-platform/">
 			<h3 class="text-2xl mb-2 font-bold">Ed-Tech Platform</h3>
 			<p class="mb-4 text-lg">A 1-on-1 ed-tech platform that connects students with tutors over WhatsApp instantly.</p>
-			<div class="flex gap-2 text-cyan-200 group-hover:gap-4 transition-[gap]">
+			<div class="flex gap-2 text-slate-700 group-hover:gap-4 transition-[gap]">
 				<span class="font-mono font-bold">Read the full case study</span>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -134,13 +110,12 @@
 
 <div class="my-16"></div>
 
-<h2 class="text-4xl uppercase font-bold mb-8">Projects</h2>
+<h2 class="text-4xl uppercase font-bold">Projects</h2>
+<hr class="my-4 border-slate-300 border-[1px] max-w-lg" />
 <ul class="grid gap-8">
 	
-	<li
-		class="p-4 border-cyan-700/40 border-2 bg-cyan-900/40 rounded-lg grid grid-cols-1 lg:grid-cols-5"
-	>
-		<div class="col-span-2 pr-4 pb-4 flex flex-col gap-4">
+	<li class="grid gap-4">
+		<div class="">
 			<a
 				href="https://my2020hero.in"
 				referrerpolicy="no-referrer"
@@ -163,25 +138,15 @@
 					/>
 				</svg>
 			</a>
-			
-			<img
-				src="https://tej.ai/project/my2020hero/preview.png"
-				class="aspect-video rounded-lg overflow-hidden object-cover my-auto"
-			></img>
-			
 		</div>
-		<div class="col-span-3 lg:border-l-2 border-cyan-700/40 py-4 lg:pl-4 text-lg prose prose-invert max-w-none">
-			<p>An online exhibition organised by CPB Foundation and CII in collaboration with Google showcasing heroes in our everyday lives.</p>
+		<div class="prose max-w-none"><p>An online exhibition organised by CPB Foundation and CII in collaboration with Google showcasing heroes in our everyday lives.</p>
 <p>Built using Next.js and styled with Tailwind, the website aimed to create an immersive and engaging experience for the viewers while remaining quick to load. This involved a lot of experimentation realted to lazy loading images and optimizing it for viewing 800+ images of different sizes.</p>
 <p>An instance of Cockpit CMS was setup and configured to enable others to upload and manage submitted images.</p>
-
-		</div>
+</div>
 	</li>
 	
-	<li
-		class="p-4 border-cyan-700/40 border-2 bg-cyan-900/40 rounded-lg grid grid-cols-1 lg:grid-cols-5"
-	>
-		<div class="col-span-2 pr-4 pb-4 flex flex-col gap-4">
+	<li class="grid gap-4">
+		<div class="">
 			<a
 				href="https://canceled-or-not.com"
 				referrerpolicy="no-referrer"
@@ -204,18 +169,10 @@
 					/>
 				</svg>
 			</a>
-			
-			<img
-				src="https://tej.ai/project/canceled-or-not/preview.png"
-				class="aspect-video rounded-lg overflow-hidden object-cover my-auto"
-			></img>
-			
 		</div>
-		<div class="col-span-3 lg:border-l-2 border-cyan-700/40 py-4 lg:pl-4 text-lg prose prose-invert max-w-none">
-			<p>A fun website built using Remix.run and SQlite3 where people can vote on how cancelled someone/something should be.</p>
+		<div class="prose max-w-none"><p>A fun website built using Remix.run and SQlite3 where people can vote on how cancelled someone/something should be.</p>
 <p>I liked some of the principles behind Remix, espcially the router and data-fetching patterns. Looking forward to the new Next.js Layout RFC to implement something similar.</p>
-
-		</div>
+</div>
 	</li>
 	
 </ul>
@@ -234,9 +191,6 @@
 				Background animation source
 			</a>
 		</footer>
-		
-		<script src="https://tej.ai/scripts/hyperdrive.js"></script>
-
 		
 	</body>
 </html>

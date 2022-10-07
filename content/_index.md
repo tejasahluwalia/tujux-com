@@ -6,8 +6,8 @@ draft: false
 
 {{< spacer >}}
 
-{{< work >}}
+{{< works >}}
 
 {{< spacer >}}
 
-{{< project >}}
+{{< projects >}}

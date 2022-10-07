@@ -18,15 +18,8 @@
 			.Site.Title }} {{ end }} {{ end }}
 		</title>
 	</head>
-	<body
-		class="text-gray-100 bg-transparent h-full min-h-screen flex flex-col motion-reduce:bg-gray-900"
-	>
+	<body class="text-slate-700 bg-slate-100">
 		<!-- Code that all your templates share, like a header -->
-
-		<canvas
-			id="hyperdrive"
-			class="fixed h-screen w-full -z-10 motion-reduce:hidden"
-		></canvas>
 		{{ block "main" . }}
 		<!-- The part of the page that begins to differ between templates -->
 		{{ end }} {{ block "footer" . }}
@@ -41,9 +34,6 @@
 				Background animation source
 			</a>
 		</footer>
-		{{ $hyperdrive := resources.Get "scripts/hyperdrive.js" }}
-		<script src="{{ $hyperdrive.Permalink }}"></script>
-
 		{{ end }}
 	</body>
 </html>

@@ -1,20 +1,12 @@
-<h2 class="text-4xl uppercase font-bold mb-8">Work</h2>
-<ul class="w-full gap-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+<h2 class="text-4xl uppercase font-bold">Work</h2>
+<hr class="my-4 border-slate-300 border-[1px] max-w-sm" />
+<ul class="w-full gap-8 grid">
 	{{ range where .Site.RegularPages "Section" "work" }}
 	<li class="group">
-		<a class="block transition rounded-lg" href="{{ .RelPermalink }}">
-			{{ with $thumbnail := .Resources.GetMatch "thumbnail.png" }}
-			<img
-				src="{{ $thumbnail.Permalink }}"
-				alt=""
-				width="{{ $thumbnail.Width }}"
-				height="{{ $thumbnail.Height }}"
-				class="w-full mb-4 object-cover rounded-md"
-			/>{{ end }}
-
+		<a class="block" href="{{ .RelPermalink }}">
 			<h3 class="text-2xl mb-2 font-bold">{{ .Title }}</h3>
 			<p class="mb-4 text-lg">{{ .Summary }}</p>
-			<div class="flex gap-2 text-cyan-200 group-hover:gap-4 transition-[gap]">
+			<div class="flex gap-2 text-slate-700 group-hover:gap-4 transition-[gap]">
 				<span class="font-mono font-bold">Read the full case study</span>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

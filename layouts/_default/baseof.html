@@ -1,39 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<!-- <script src="htmx.min.js" defer></script> -->
-		<!-- <script src="//unpkg.com/alpinejs" defer></script> -->
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		{{ $style := resources.Get "style.css" }}
-		<link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <head>
+        <!-- <script src="htmx.min.js" defer></script> -->
+        <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {{ $style := resources.Get "style.css" }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}" />
+        {{ $favicon := resources.Get "logo.svg" }}
+        <link rel="icon" type="image/svg" href="{{ $favicon.Permalink }}" />
 
-		<!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
-		{{ $favicon := resources.Get "logo.svg" }}
-		<link rel="icon" type="image/svg" href="{{ $favicon.Permalink }}" />
-
-		<title>
-			{{ block "title" . }} {{ .Page.Title }} {{ if not .IsHome }}| {{
-			.Site.Title }} {{ end }} {{ end }}
-		</title>
-	</head>
-	<body class="text-slate-700 bg-slate-100">
-		<!-- Code that all your templates share, like a header -->
-		{{ block "main" . }}
-		<!-- The part of the page that begins to differ between templates -->
-		{{ end }} {{ block "footer" . }}
-		<!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-		<footer class="container mx-auto p-4 text-right h-full">
-			<a
-				class="underline text-sm text-gray-50/50 text-right w-full"
-				target="_blank"
-				referrerpolicy="noreferrer noopener"
-				href="https://stackoverflow.com/a/46437821/14390572"
-			>
-				Background animation source
-			</a>
-		</footer>
-		{{ end }}
-	</body>
+        <title>
+            {{ block "title" . }} {{ .Page.Title }} {{ if not .IsHome }}| {{
+            .Site.Title }} {{ end }} {{ end }}
+        </title>
+    </head>
+    <body
+        class="text-neutral-950 bg-neutral-50 dark:bg-neutral-900 dark:text-neutral-50 font-serif max-w-screen-md container mx-auto"
+    >
+        <!-- Code that all your templates share, like a header -->
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }} {{ block "footer" . }}
+        <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+        <footer class="container mx-auto p-4 text-right h-full"></footer>
+        {{ end }}
+    </body>
 </html>

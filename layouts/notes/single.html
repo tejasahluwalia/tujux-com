@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main
+    class="container mx-auto p-4 prose prose-neutral dark:prose-invert prose-p:font-sans flex-1"
+>
+    <h1 class="my-8">{{ .Title }}</h1>
+    {{ with $thumbnail := .Resources.GetMatch "thumbnail.png" }}
+    <img
+        src="{{ $thumbnail.Permalink }}"
+        alt=""
+        width="{{ $thumbnail.Width }}"
+        height="{{ $thumbnail.Height }}"
+        class="w-full mb-4 object-cover rounded-md"
+    />{{ end }} {{ .Content }}
+</main>
+{{ end }}

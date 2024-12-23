@@ -1,0 +1,15 @@
+<ul class="w-full gap-4 grid">
+    {{ range where .Site.RegularPages "Section" "notes" }}
+    <li
+        class="group transition-opacity border-b border-neutral-400 dark:border-neutral-600"
+    >
+        <a class="block group pb-1" href="{{ .RelPermalink }}">
+            <h3
+                class="text-lg group-hover:opacity-70 group-hover:translate-x-2 transition-all duration-300"
+            >
+                {{ .Title }}
+            </h3>
+        </a>
+    </li>
+    {{ end }}
+</ul>

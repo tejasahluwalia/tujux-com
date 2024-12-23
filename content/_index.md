@@ -6,8 +6,4 @@ draft: false
 
 {{< spacer >}}
 
-{{< works >}}
-
-{{< spacer >}}
-
-{{< projects >}}
+{{< notes >}}

@@ -6,8 +6,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {{ $style := resources.Get "style.css" }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}" />
+        {{ partialCached "css.html" . }}
         {{ $favicon := resources.Get "logo.svg" }}
         <link rel="icon" type="image/svg" href="{{ $favicon.Permalink }}" />
 
@@ -17,7 +16,7 @@
         </title>
     </head>
     <body
-        class="text-neutral-950 bg-neutral-50 dark:bg-neutral-900 dark:text-neutral-50 font-serif max-w-screen-md container mx-auto"
+        class="text-neutral-950 bg-neutral-50 dark:bg-neutral-900 dark:text-neutral-50 font-serif max-w-(--breakpoint-md) container mx-auto"
     >
         <!-- Code that all your templates share, like a header -->
         {{ block "main" . }}

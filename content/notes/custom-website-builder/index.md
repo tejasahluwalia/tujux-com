@@ -32,7 +32,7 @@ With an interactive layout that makes it easy for the user to understand the pur
 
 {{< video "cpb-branches-css-animation.m4v">}}
 
-_I'm really proud of coming up with this soltuion and successfully implementing it!_
+_I'm really proud of coming up with this solution and successfully implementing it!_
 
 > ### How do you serve a large JS app to users across the world?
 

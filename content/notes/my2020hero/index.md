@@ -1,6 +1,6 @@
 ---
 title: "#My2020Hero"
-draft: false
+draft: true
 link: "https://my2020hero.vercel.app"
 source: "unavailable"
 ---

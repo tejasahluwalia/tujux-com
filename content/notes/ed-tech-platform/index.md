@@ -1,6 +1,6 @@
 ---
 title: "Ed-Tech Platform"
-draft: false
+draft: true
 summary: "A 1-on-1 ed-tech platform that connects students with tutors over WhatsApp instantly."
 ---
 
